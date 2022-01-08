@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="BemVindos">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <script src="angular/angular.js"></script> </script>
+        <script>
+            angular.module("BemVindos",[])
+            angular.module("BemVindos").controller("BemVindosCtrl", 
+            function ($scope){
+                $scope.message = "Ola mundo!!"
+            });
+        </script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div ng-controller="BemVindosCtrl">
+            {{message}}
+        </div>
+    </body>
+</html>
